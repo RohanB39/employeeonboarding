@@ -1,0 +1,75 @@
+.onboarding-page {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.navbar {
+  background-color: #1c1c1c;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  width: 80%;
+  margin-top: 30px;
+  position: sticky; /* Make the navbar sticky */
+  top: 0; /* Position it at the top of the viewport */
+  z-index: 1000; /* Ensure it stays above other content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional: add a shadow for better visibility */
+}
+
+.navbar-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.navbar-content button {
+  background-color: #2c2c2c;
+  border: none;
+  color: #fff;
+  padding: 20px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar-content button:hover {
+  background-color: #ff4081;
+  transform: translateY(-3px);
+}
+
+.navbar-content button.active {
+  background-color: #ff4081;
+  color: #fff;
+  font-size: 600;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar {
+      width: 100%;
+      margin-top: 0px;
+      border-radius: 0px;
+  }
+  .navbar-content button {
+      flex: 1 1 100%;
+      margin: 5px 0;
+      padding: 10px;
+      width: 100%;
+  }
+}
