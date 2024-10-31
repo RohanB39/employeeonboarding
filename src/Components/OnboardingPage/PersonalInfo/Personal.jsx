@@ -96,8 +96,9 @@ const Personal = () => {
         try {
             // Set the document ID to be employeeId and save data in the 'employees' collection
             await setDoc(doc(fireDB, 'employees', employeeId), {
-                employeeId,    // Save employeeId outside of personalInfo
-                personalInfo   // Save all form data inside personalInfo object
+                employeeId, 
+                personalInfo,
+                Status: 'Active',
             });
     
             alert(`Document with Employee ID: ${employeeId} successfully written.`);
